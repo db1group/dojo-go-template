@@ -5,7 +5,7 @@ import (
 )
 
 func TestShouldReturnSomeExpected(t *testing.T) {
-	actual := MultiParametrosEUmRetorno(1, 13)
+	actual := PublicMultiParamAndOneReturn(1, 13)
 
 	if "private example" != actual {
 		t.Error("Test public failed", actual)
@@ -14,7 +14,7 @@ func TestShouldReturnSomeExpected(t *testing.T) {
 }
 
 func TestShouldReturnSomeExpectedTwo(t *testing.T) {
-	actual := MultiParametrosEUmRetorno(1, 17)
+	actual := PublicMultiParamAndOneReturn(1, 17)
 
 	if "private example" != actual {
 		t.Error("Test public failed", actual)

@@ -3,40 +3,40 @@ package example
 import "fmt"
 
 var (
-	externaGeral  string = "qualquer coisa"
-	externaGeral2        = false
+	varWithExplicitType string = "anystring"
+	varWithImplicitType        = false
 )
 
-func privadaSemNada() {
-	fmt.Println("Sem parametro e sem retorno")
+func privateWithoutParam() {
+	fmt.Println("Functions with lower-case names are automatically private")
 }
 
-func privadaComParametroEComRetorno(myparameter int) string {
-	var complete string = "um valor qualquer"
+func privateWithOneParamAndOneReturn(myparameter int) string {
+	var localVarWithExplicitType string = "anystring"
 	fmt.Println(myparameter)
-	fmt.Println(complete)
+	fmt.Println(localVarWithExplicitType)
 	return "private example"
 }
 
-func PublicaComParametroEComRetorno(myparameter bool) string {
-	var complete = "um valor qualquer"
+func PublicWithOneParamAndOneReturn(myparameter bool) string {
+	var localVarWithImplicitType = "anystring"
 	fmt.Println(myparameter)
-	fmt.Println(complete)
+	fmt.Println(localVarWithImplicitType)
 	return "public example"
 }
 
-func MultiParametrosEUmRetorno(first float32, second float64) string {
-	complete := "um valor qualquer"
+func PublicMultiParamAndOneReturn(first float32, second float64) string {
+	localVarShortSyntax := "anystring"
 	fmt.Println(first)
 	fmt.Println(second)
-	fmt.Println(complete)
+	fmt.Println(localVarShortSyntax)
 	return "private example"
 }
 
-func MultiParametrosEMultiRetornos(first int, second string) (string, int) {
-	fmt.Println(externaGeral)
-	fmt.Println(externaGeral2)
+func PublicMultiParamWithMultiReturns(first int, second string) (string, string) {
+	fmt.Println(varWithExplicitType)
+	fmt.Println(varWithImplicitType)
 	fmt.Println(first)
 	fmt.Println(second)
-	return "private example", 0
+	return "first return", "second return"
 }
