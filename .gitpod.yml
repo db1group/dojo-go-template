@@ -1,0 +1,5 @@
+vscode:
+  extensions:
+    - ethan-reesor.vscode-go-test-adapter@0.1.3:KSVclqhlpftVUfC4L9rkBg==
+    - golang.go@0.15.2:hZ5N7893gvlRR6koMA/ybw==
+    - hbenl.vscode-test-explorer@2.19.1:GtY0wSp3pjUeyKXi8mFMnQ==
