@@ -12,7 +12,7 @@
 
 ## How to run a test
 
-Just open the test class and click over `run test` option, right above the test name.
+Just open the test file and click over `run test` option, right above the function name.
 >IMPORTANT: If it is your first workspace, it may take a few seconds before showing this option.
 
 ## Environment setup
